@@ -9,3 +9,10 @@ services:
       # - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
     ports:
       - '80:80'
+    links:
+      - web
+  web:
+    image: php:fpm
+    container_name: nginx_php_fpm
+    volumes:
+      - ./demo:/usr/share/nginx/html
