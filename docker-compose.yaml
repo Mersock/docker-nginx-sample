@@ -1,7 +1,8 @@
 version: '3.8'
 services:
   nginx:
-    image: nginx:1.18.0
+    build:
+      context: .
     container_name: nginx
     volumes:
       - ./demo:/usr/share/nginx/html
