@@ -9,7 +9,8 @@ RUN apt-get update && apt-get install -y curl \
     libpcre3-dev \
     zlib1g \
     zlib1g-dev \
-    libssl-dev
+    libssl-dev \
+    nghttp2-client 
 
 EXPOSE 80
 
