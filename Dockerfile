@@ -10,7 +10,8 @@ RUN apt-get update && apt-get install -y curl \
     zlib1g \
     zlib1g-dev \
     libssl-dev \
-    nghttp2-client 
+    nghttp2-client \
+    siege
 
 EXPOSE 80
 
