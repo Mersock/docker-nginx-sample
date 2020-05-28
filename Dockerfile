@@ -11,7 +11,8 @@ RUN apt-get update && apt-get install -y curl \
     zlib1g-dev \
     libssl-dev \
     nghttp2-client \
-    siege
+    siege \
+    php-fpm
 
 EXPOSE 80
 

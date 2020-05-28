@@ -15,10 +15,3 @@ services:
     ports:
       - '80:80'
       - '443:443'
-    links:
-      - web
-  web:
-    image: php:fpm
-    container_name: nginx_php_fpm
-    volumes:
-      - ./demo:/usr/share/nginx/html
